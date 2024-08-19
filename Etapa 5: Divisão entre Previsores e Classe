@@ -1,0 +1,8 @@
+# Separar variáveis previsoras (x) e classe (y)
+x_credit = basecredit.iloc[:, 1:4].values
+y_credit = basecredit.iloc[:, 4].values
+
+print(x_credit)
+print(type(x_credit))
+print(y_credit)
+print(type(y_credit))
