@@ -1,0 +1,9 @@
+# Contar valores faltantes
+print(basecredit.isnull().sum())
+
+# Localizar registros com idade faltante
+print(basecredit.loc[pd.isnull(basecredit['age'])])
+
+# Preencher valores faltantes com a média das idades
+basecredit['age'].fillna(basecredit['age'].mean(), inplace=True)
+print(basecredit.loc[pd.isnull(basecredit['age'])])
