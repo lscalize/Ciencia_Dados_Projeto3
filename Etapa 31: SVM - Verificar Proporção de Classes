@@ -1,0 +1,3 @@
+# Calcular a proporção das classes positivas
+proporcao_classes = 4885 / (27676 + 4885)
+print("Proporção das classes positivas:", proporcao_classes)
