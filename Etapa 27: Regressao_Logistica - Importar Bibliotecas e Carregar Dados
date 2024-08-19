@@ -1,0 +1,15 @@
+# Importar bibliotecas necessárias
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+from yellowbrick.classifier import ConfusionMatrix
+import pickle
+import numpy as np
+
+# Carregar dados da base risco de crédito
+with open('risco_credito.pkl', 'rb') as f:
+    x_risco_credito, y_risco_credito = pickle.load(f)
+
+# Exibir dados carregados
+print("Dados de Risco de Crédito:")
+print(x_risco_credito)
+print(y_risco_credito)
