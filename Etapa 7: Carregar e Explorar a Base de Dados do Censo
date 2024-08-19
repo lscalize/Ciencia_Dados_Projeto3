@@ -1,0 +1,12 @@
+# Carregar a base de dados do censo
+base_census = pd.read_csv('/content/census.csv')
+
+# Agrupar e plotar por 'relationship'
+from matplotlib import pyplot as plt
+import seaborn as sns
+base_census.groupby('relationship').size().plot(kind='barh', color=sns.color_palette('Dark2'))
+plt.gca().spines[['top', 'right']].set_visible(False)
+plt.show()
+
+# Descrição estatística da base de dados do censo
+print(base_census.describe())
