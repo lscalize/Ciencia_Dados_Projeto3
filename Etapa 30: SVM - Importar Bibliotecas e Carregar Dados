@@ -1,0 +1,15 @@
+# Importar biblioteca necessária
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score, classification_report
+from yellowbrick.classifier import ConfusionMatrix
+import pickle
+
+# Carregar dados da base Census
+with open('census.pkl', 'rb') as f:
+    x_census_treinamento, y_census_treinamento, x_census_teste, y_census_teste = pickle.load(f)
+
+# Exibir as formas dos dados carregados
+print("Forma dos dados de treinamento:")
+print(x_census_treinamento.shape, y_census_treinamento.shape)
+print("Forma dos dados de teste:")
+print(x_census_teste.shape, y_census_teste.shape)
