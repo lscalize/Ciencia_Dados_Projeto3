@@ -67,9 +67,11 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 ## Conclusão
 
-Na base de dados de crédito, o modelo Random Forest apresentou a melhor acurácia, seguido pela Árvore de Decisão e Naive Bayes. Ambas as técnicas mostram-se eficazes, mas o Random Forest se destacou na maioria das métricas de desempenho.
+Na base de dados de crédito, o modelo xxxxxxxxx apresentou a melhor acurácia...
 
-Na base de dados do censo, o modelo Random Forest também teve um desempenho superior, com uma acurácia maior comparada aos modelos de Naive Bayes e Árvore de Decisão. O relatório de classificação indica que o Random Forest conseguiu capturar melhor as nuances dos dados.
+Na base de dados do censo, o modelo yyyyyyy  teve um desempenho superior... 
+
+O relatório de classificação indica que o Random Forest conseguiu capturar melhor as nuances dos dados.
 
 Esses resultados destacam a importância de avaliar múltiplos modelos para entender qual se ajusta melhor aos dados específicos de cada caso.
 
