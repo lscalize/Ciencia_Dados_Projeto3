@@ -33,19 +33,19 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 ### Base de Dados de Crédito
 
 #### Naive Bayes
-- **Acurácia:** {{ accuracy_naive_credit }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Árvore de Decisão
-- **Acurácia:** {{ accuracy_tree_credit }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Random Forest
-- **Acurácia:** {{ accuracy_rf_credit }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
@@ -53,19 +53,19 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 ### Base de Dados do Censo
 
 #### Naive Bayes
-- **Acurácia:** {{ accuracy_naive_census }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Árvore de Decisão
-- **Acurácia:** {{ accuracy_tree_census }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Random Forest
-- **Acurácia:** {{ accuracy_rf_census }}
+- **Acurácia:** 
 - **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
