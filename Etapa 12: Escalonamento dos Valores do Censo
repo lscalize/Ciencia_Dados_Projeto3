@@ -1,0 +1,6 @@
+# Aplicar escalonamento nos dados
+from sklearn.preprocessing import StandardScaler
+scaler_census = StandardScaler()
+x_census = scaler_census.fit_transform(x_census)
+
+print(x_census[0])
