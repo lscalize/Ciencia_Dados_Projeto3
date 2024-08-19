@@ -1,0 +1,16 @@
+# Carregando a base de dados processada
+with open('risco_credito.pkl', 'rb') as f:
+    x_risco_credito, y_risco_credito = pickle.load(f)
+
+# Inicializando e treinando o classificador Naive Bayes
+naive_risco_credito = GaussianNB()
+naive_risco_credito.fit(x_risco_credito, y_risco_credito)
+
+# Realizando previsões
+previsao = naive_risco_credito.predict([[0, 0, 1, 2], [2, 0, 0, 0]])
+
+# Exibindo resultados
+print("Previsões:", previsao)
+print("Classes:", naive_risco_credito.classes_)
+print("Contagem das classes:", naive_risco_credito.class_count_)
+print("Prioridade das classes:", naive_risco_credito.class_prior_)
