@@ -1,0 +1,27 @@
+# Carregar dados da base Census
+with open('census.pkl', 'rb') as f:
+    x_census_treinamento, y_census_treinamento, x_census_teste, y_census_teste = pickle.load(f)
+
+# Criar e treinar o modelo de Regressão Logística para a base Census
+logistic_census = LogisticRegression(random_state=1)
+logistic_census.fit(x_census_treinamento, y_census_treinamento)
+
+# Exibir parâmetros do modelo treinado
+print("Intercepto:", logistic_census.intercept_)
+print("Coeficientes:", logistic_census.coef_)
+
+# Fazer previsões com o modelo treinado
+previsoes_census = logistic_census.predict(x_census_teste)
+print("Previsões para a base Census:", previsoes_census)
+
+# Avaliar o desempenho do modelo
+print("Base Census:")
+print("Acurácia:", accuracy_score(y_census_teste, previsoes_census))
+
+# Exibir relatório de classificação
+print(classification_report(y_census_teste, previsoes_census))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(logistic_census)
+cm.fit(x_census_treinamento, y_census_treinamento)
+cm.score(x_census_teste, y_census_teste)
