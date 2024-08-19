@@ -1,0 +1,11 @@
+# Dividir a base de dados de crédito em treinamento e teste
+from sklearn.model_selection import train_test_split
+
+x_credit_train, x_credit_test, y_credit_train, y_credit_test = train_test_split(x_credit, y_credit, test_size=0.25, random_state=0)
+print(x_credit_train.shape, y_credit_train.shape)
+print(x_credit_test.shape, y_credit_test.shape)
+
+# Dividir a base de dados do censo em treinamento e teste
+x_census_train, x_census_test, y_census_train, y_census_test = train_test_split(x_census, y_census, test_size=0.15, random_state=0)
+print(x_census_train.shape, y_census_train.shape)
+print(x_census_test.shape, y_census_test.shape)
