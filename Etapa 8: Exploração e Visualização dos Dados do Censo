@@ -1,0 +1,38 @@
+# Contar valores únicos na coluna 'income'
+print(np.unique(base_census['income'], return_counts=True))
+
+# Plotar gráfico de contagem para a variável 'income'
+sns.countplot(x=base_census['income'])
+plt.show()
+
+# Histograma para a variável 'age'
+plt.hist(x=base_census['age'])
+plt.show()
+
+# Histograma para a variável 'education-num'
+plt.hist(x=base_census['education-num'])
+plt.show()
+
+# Histograma para a variável 'hour-per-week'
+plt.hist(x=base_census['hour-per-week'])
+plt.show()
+
+# Gráfico de árvore para as variáveis 'workclass' e 'age'
+grafico = px.treemap(base_census, path=['workclass', 'age'])
+grafico.show()
+
+# Gráfico de árvore para as variáveis 'occupation', 'relationship' e 'age'
+grafico = px.treemap(base_census, path=['occupation', 'relationship', 'age'])
+grafico.show()
+
+# Gráfico de categorias paralelas para 'occupation' e 'relationship'
+grafico2 = px.parallel_categories(base_census, dimensions=['occupation', 'relationship'])
+grafico2.show()
+
+# Gráfico de categorias paralelas para 'workclass', 'occupation' e 'income'
+grafico2 = px.parallel_categories(base_census, dimensions=['workclass', 'occupation', 'income'])
+grafico2.show()
+
+# Gráfico de categorias paralelas para 'education' e 'income'
+grafico2 = px.parallel_categories(base_census, dimensions=['education', 'income'])
+grafico2.show()
