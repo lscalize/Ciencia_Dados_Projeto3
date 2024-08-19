@@ -1,0 +1,28 @@
+# Carregar dados da base Census
+with open('census.pkl', 'rb') as f:
+    x_census_treinamento, y_census_treinamento, x_census_teste, y_census_teste = pickle.load(f)
+
+# Verificar dimensões dos dados
+print(x_census_treinamento.shape, y_census_treinamento.shape)
+print(x_census_teste.shape, y_census_teste.shape)
+
+# Criar e treinar o modelo Random Forest para a base Census
+random_forest_census = RandomForestClassifier(n_estimators=100, criterion='entropy', random_state=0)
+random_forest_census.fit(x_census_treinamento, y_census_treinamento)
+
+# Fazer previsões com o modelo treinado
+previsoes = random_forest_census.predict(x_census_teste)
+
+# Avaliar o desempenho do modelo
+print("Base Census")
+print("Previsões:", previsoes)
+print("Valores reais:", y_census_teste)
+print("Acurácia:", accuracy_score(y_census_teste, previsoes))
+
+# Exibir relatório de classificação
+print(classification_report(y_census_teste, previsoes))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(random_forest_census)
+cm.fit(x_census_treinamento, y_census_treinamento)
+cm.score(x_census_teste, y_census_teste)
