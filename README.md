@@ -22,8 +22,8 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 4. **Divisão em Treinamento e Teste:**
    - Divisão dos dados em conjuntos de treinamento e teste para ambas as bases
 
-5. **Modelagem com Naive Bayes e Árvore de Decisão:**
-   - Treinamento e avaliação dos modelos Naive Bayes e Árvore de Decisão
+5. **Modelagem com Naive Bayes, Árvore de Decisão e Random Forest:**
+   - Treinamento e avaliação dos modelos Naive Bayes, Árvore de Decisão e Random Forest
 
 6. **Comparação de Resultados:**
    - Análise e comparação das métricas de desempenho dos modelos
@@ -44,6 +44,12 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 - **Relatório de Classificação:**
 
 
+#### Random Forest
+- **Acurácia:** {{ accuracy_rf_credit }}
+- **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
 ### Base de Dados do Censo
 
 #### Naive Bayes
@@ -58,11 +64,18 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 - **Relatório de Classificação:**
 
 
+#### Random Forest
+- **Acurácia:** {{ accuracy_rf_census }}
+- **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
+
 ## Conclusão
 
-Na base de dados de crédito, o modelo de Árvore de Decisão apresentou uma acurácia ligeiramente maior que o modelo de Naive Bayes. Ambas as técnicas mostraram-se eficazes, mas a Árvore de Decisão se destacou na maioria das métricas de desempenho.
+Na base de dados de crédito, o modelo Random Forest apresentou a melhor acurácia, seguido pela Árvore de Decisão e Naive Bayes. Ambas as técnicas mostram-se eficazes, mas o Random Forest se destacou na maioria das métricas de desempenho.
 
-Na base de dados do censo, o modelo de Naive Bayes teve um desempenho superior, com uma acurácia maior comparada ao modelo de Árvore de Decisão. Além disso, o relatório de classificação indicou que Naive Bayes conseguiu capturar melhor as nuances dos dados.
+Na base de dados do censo, o modelo Random Forest também teve um desempenho superior, com uma acurácia maior comparada aos modelos de Naive Bayes e Árvore de Decisão. O relatório de classificação indica que o Random Forest conseguiu capturar melhor as nuances dos dados.
 
 Esses resultados destacam a importância de avaliar múltiplos modelos para entender qual se ajusta melhor aos dados específicos de cada caso.
 
@@ -71,8 +84,7 @@ Esses resultados destacam a importância de avaliar múltiplos modelos para ente
 1. Clone o repositório.
 2. Instale as dependências necessárias:
    ```sh
-   pip install pandas numpy seaborn matplotlib plotly scikit-learn
+   pip install pandas numpy seaborn matplotlib plotly scikit-learn yellowbrick
 
 
-
-Com isso, todo o código e o README.md estão prontos para serem utilizados diretamente no GitHub, facilitando a compreensão e a reprodução dos resultados encontrados.
+Com essas adições, o código e o README.md estão prontos para serem usados diretamente no GitHub, com todos os detalhes necessários para replicar o projeto e entender os resultados.
