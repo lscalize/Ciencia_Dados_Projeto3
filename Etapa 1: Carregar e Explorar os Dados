@@ -1,0 +1,24 @@
+# Importando bibliotecas necessárias
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px
+
+# Carregar a base de dados de crédito
+basecredit = pd.read_csv('/content/credit_data.csv')
+
+# Exibir os primeiros 10 registros da base de dados
+print(basecredit.head(10))
+
+# Exibir os últimos 10 registros da base de dados
+print(basecredit.tail(10))
+
+# Descrição estatística da base de dados
+print(basecredit.describe())
+
+# Filtrar registros com renda maior ou igual a 69995.6855783239
+print(basecredit[basecredit['income'] >= 69995.6855783239])
+
+# Filtrar registros com empréstimos menores ou iguais a 1.37762959325451
+print(basecredit[basecredit['loan'] <= 1.37762959325451])
