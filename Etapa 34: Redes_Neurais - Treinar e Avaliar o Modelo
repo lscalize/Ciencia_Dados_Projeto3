@@ -1,0 +1,22 @@
+# Criar e treinar o modelo MLPClassifier
+rede_neural_census = MLPClassifier(
+    max_iter=1500,  # Número máximo de iterações
+    verbose=True,   # Exibir informações durante o treinamento
+    tol=0.00000100, # Critério de tolerância para a convergência
+    hidden_layer_sizes=(55, 55)  # Tamanho das camadas ocultas
+)
+rede_neural_census.fit(x_census_treinamento, y_census_treinamento)
+
+# Fazer previsões com o modelo treinado
+previsoes = rede_neural_census.predict(x_census_teste)
+
+# Avaliar o desempenho do modelo
+print("Acurácia do modelo MLPClassifier:", accuracy_score(y_census_teste, previsoes))
+
+# Exibir relatório de classificação
+print(classification_report(y_census_teste, previsoes))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(rede_neural_census)
+cm.fit(x_census_treinamento, y_census_treinamento)
+cm.score(x_census_teste, y_census_teste)
