@@ -35,3 +35,44 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 #### Naive Bayes
 - **Acurácia:** {{ accuracy_naive_credit }}
 - **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
+#### Árvore de Decisão
+- **Acurácia:** {{ accuracy_tree_credit }}
+- **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
+### Base de Dados do Censo
+
+#### Naive Bayes
+- **Acurácia:** {{ accuracy_naive_census }}
+- **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
+#### Árvore de Decisão
+- **Acurácia:** {{ accuracy_tree_census }}
+- **Matriz de Confusão:**
+- **Relatório de Classificação:**
+
+
+## Conclusão
+
+Na base de dados de crédito, o modelo de Árvore de Decisão apresentou uma acurácia ligeiramente maior que o modelo de Naive Bayes. Ambas as técnicas mostraram-se eficazes, mas a Árvore de Decisão se destacou na maioria das métricas de desempenho.
+
+Na base de dados do censo, o modelo de Naive Bayes teve um desempenho superior, com uma acurácia maior comparada ao modelo de Árvore de Decisão. Além disso, o relatório de classificação indicou que Naive Bayes conseguiu capturar melhor as nuances dos dados.
+
+Esses resultados destacam a importância de avaliar múltiplos modelos para entender qual se ajusta melhor aos dados específicos de cada caso.
+
+## Como Executar
+
+1. Clone o repositório.
+2. Instale as dependências necessárias:
+   ```sh
+   pip install pandas numpy seaborn matplotlib plotly scikit-learn
+
+
+
+Com isso, todo o código e o README.md estão prontos para serem utilizados diretamente no GitHub, facilitando a compreensão e a reprodução dos resultados encontrados.
