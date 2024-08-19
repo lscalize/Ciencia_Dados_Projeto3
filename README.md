@@ -62,6 +62,14 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 - **Acurácia:** 0.477
 - **Relatório de Classificação:**
 
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| <=50k           |    0.97     |   0.32   |   0.48     |   3693    |
+| >50k            |    0.31     |   0.97   |   0.48     |   1192    |
+| accuracy        |             |          |   0.48     |   4885    |
+| macro avg       |    0.64     |   0.64   |   0.48     |   4885    |
+| weighted avg    |    0.81     |   0.48   |   0.48     |   4885    |  
+
 
 #### Árvore de Decisão
 - **Acurácia:** 
