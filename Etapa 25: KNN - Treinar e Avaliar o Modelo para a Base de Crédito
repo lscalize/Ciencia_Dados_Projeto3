@@ -1,0 +1,20 @@
+# Criar e treinar o modelo kNN para a base de crédito
+knn_credit = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
+knn_credit.fit(x_credit_treinamento, y_credit_treinamento)
+
+# Fazer previsões com o modelo treinado
+previsoes = knn_credit.predict(x_credit_teste)
+
+# Avaliar o desempenho do modelo
+print("Base Credit Data")
+print("Previsões:", previsoes)
+print("Valores reais:", y_credit_teste)
+print("Acurácia:", accuracy_score(y_credit_teste, previsoes))
+
+# Exibir relatório de classificação
+print(classification_report(y_credit_teste, previsoes))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(knn_credit)
+cm.fit(x_credit_treinamento, y_credit_treinamento)
+cm.score(x_credit_teste, y_credit_teste)
