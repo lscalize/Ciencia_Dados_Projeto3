@@ -1,0 +1,22 @@
+# Contar valores únicos na coluna 'default'
+print(np.unique(basecredit['default'], return_counts=True))
+
+# Plotar gráfico de contagem para a variável 'default'
+sns.countplot(x=basecredit['default'])
+plt.show()
+
+# Histograma para a variável 'age'
+plt.hist(x=basecredit['age'])
+plt.show()
+
+# Histograma para a variável 'income'
+plt.hist(x=basecredit['income'])
+plt.show()
+
+# Histograma para a variável 'loan'
+plt.hist(x=basecredit['loan'])
+plt.show()
+
+# Gráfico de dispersão das variáveis 'age', 'income' e 'loan'
+grafico = px.scatter_matrix(basecredit, dimensions=['age', 'income', 'loan'], color='default')
+grafico.show()
