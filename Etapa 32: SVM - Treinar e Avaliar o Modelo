@@ -1,0 +1,17 @@
+# Criar e treinar o modelo SVM com kernel linear
+svm_census = SVC(kernel='linear', random_state=1, C=1.0)
+svm_census.fit(x_census_treinamento, y_census_treinamento)
+
+# Fazer previsões com o modelo treinado
+previsoes = svm_census.predict(x_census_teste)
+
+# Avaliar o desempenho do modelo
+print("Acurácia do modelo SVM:", accuracy_score(y_census_teste, previsoes))
+
+# Exibir relatório de classificação
+print(classification_report(y_census_teste, previsoes))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(svm_census)
+cm.fit(x_census_treinamento, y_census_treinamento)
+cm.score(x_census_teste, y_census_teste)
