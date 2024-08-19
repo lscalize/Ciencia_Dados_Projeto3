@@ -1,0 +1,17 @@
+# Localizar registros com idade negativa
+print(basecredit.loc[basecredit['age'] < 0])
+
+# Apagar registros com valores inconsistentes
+basecredit_agecorrigida = basecredit.drop(basecredit[basecredit['age'] < 0].index)
+print(basecredit_agecorrigida)
+
+# Verificar se ainda há registros com idade negativa
+print(basecredit_agecorrigida.loc[basecredit['age'] < 0])
+
+# Preencher valores inconsistentes com a média das idades
+media_idade = basecredit['age'][basecredit['age'] > 0].mean()
+basecredit.loc[basecredit['age'] < 0, 'age'] = media_idade
+print(basecredit.loc[basecredit['age'] < 0])
+
+# Exibir os primeiros 27 registros da base de dados corrigida
+print(basecredit.head(27))
