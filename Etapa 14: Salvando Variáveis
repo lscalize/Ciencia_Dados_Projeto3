@@ -1,0 +1,9 @@
+import pickle
+
+# Salvando variáveis de crédito
+with open('credit.pkl', mode='wb') as f:
+    pickle.dump([x_credit_treinamento, y_credit_treinamento, x_credit_teste, y_credit_teste], f)
+
+# Salvando variáveis de censo
+with open('census.pkl', mode='wb') as f:
+    pickle.dump([x_census_treinamento, y_census_treinamento, x_census_teste, y_census_teste], f)
