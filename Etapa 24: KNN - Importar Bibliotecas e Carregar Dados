@@ -1,0 +1,13 @@
+# Importar bibliotecas necessárias
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, classification_report
+from yellowbrick.classifier import ConfusionMatrix
+import pickle
+
+# Carregar dados da base de crédito
+with open('credit.pkl', 'rb') as f:
+    x_credit_treinamento, y_credit_treinamento, x_credit_teste, y_credit_teste = pickle.load(f)
+
+# Verificar dimensões dos dados
+print(x_credit_treinamento.shape, y_credit_treinamento.shape)
+print(x_credit_teste.shape, y_credit_teste.shape)
