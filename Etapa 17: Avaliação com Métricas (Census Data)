@@ -1,0 +1,19 @@
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+# Carregando a base de dados do censo
+with open('census.pkl', 'rb') as f:
+    x_census_treinamento, y_census_treinamento, x_census_teste, y_census_teste = pickle.load(f)
+
+# Inicializando e treinando o classificador Naive Bayes
+naive_census = GaussianNB()
+naive_census.fit(x_census_treinamento, y_census_treinamento)
+
+# Realizando previsões
+previsoes = naive_census.predict(x_census_teste)
+
+# Avaliando o modelo
+accuracy = accuracy_score(y_census_teste, previsoes)
+print("Acurácia:", accuracy)
+
+cm = confusion_matrix(y_census_teste, previsoes)
+print("Matriz de Confusão:\n", cm)

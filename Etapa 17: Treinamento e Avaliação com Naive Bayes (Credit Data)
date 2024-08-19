@@ -1,0 +1,14 @@
+# Carregando a base de dados de crédito
+with open('credit.pkl', 'rb') as f:
+    x_credit_treinamento, y_credit_treinamento, x_credit_teste, y_credit_teste = pickle.load(f)
+
+# Inicializando e treinando o classificador Naive Bayes
+naive_credit_data = GaussianNB()
+naive_credit_data.fit(x_credit_treinamento, y_credit_treinamento)
+
+# Realizando previsões
+previsoes = naive_credit_data.predict(x_credit_teste)
+
+# Exibindo previsões
+print("Previsões:", previsoes)
+print("Valores reais:", y_credit_teste)
