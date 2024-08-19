@@ -71,7 +71,7 @@ Na base de dados de crédito, o modelo xxxxxxxxx apresentou a melhor acurácia..
 
 Na base de dados do censo, o modelo yyyyyyy  teve um desempenho superior... 
 
-O relatório de classificação indica que o Random Forest conseguiu capturar melhor as nuances dos dados.
+O relatório de classificação indica que o ZZZZZZZ conseguiu capturar melhor as nuances dos dados.
 
 Esses resultados destacam a importância de avaliar múltiplos modelos para entender qual se ajusta melhor aos dados específicos de cada caso.
 
