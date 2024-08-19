@@ -1,0 +1,12 @@
+# Verificar valores mínimos e máximos das variáveis previsoras
+print(x_credit[:,0].min(), x_credit[:,1].min(), x_credit[:,2].min())
+print(x_credit[:,0].max(), x_credit[:,1].max(), x_credit[:,2].max())
+
+# Aplicar escalonamento nos dados
+from sklearn.preprocessing import StandardScaler
+scaler_credit = StandardScaler()
+x_credit = scaler_credit.fit_transform(x_credit)
+
+print(x_credit[:,0].min(), x_credit[:,1].min(), x_credit[:,2].min())
+print(x_credit[:,0].max(), x_credit[:,1].max(), x_credit[:,2].max())
+print(x_credit)
