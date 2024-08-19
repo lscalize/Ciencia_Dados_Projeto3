@@ -1,0 +1,27 @@
+# Carregar dados da base de crédito
+with open('credit.pkl', 'rb') as f:
+    x_credit_treinamento, y_credit_treinamento, x_credit_teste, y_credit_teste = pickle.load(f)
+
+# Criar e treinar o modelo de Regressão Logística para a base de crédito
+logistic_credit = LogisticRegression(random_state=1)
+logistic_credit.fit(x_credit_treinamento, y_credit_treinamento)
+
+# Exibir parâmetros do modelo treinado
+print("Intercepto:", logistic_credit.intercept_)
+print("Coeficientes:", logistic_credit.coef_)
+
+# Fazer previsões com o modelo treinado
+previsoes2 = logistic_credit.predict(x_credit_teste)
+print("Previsões para a base de crédito:", previsoes2)
+
+# Avaliar o desempenho do modelo
+print("Base Crédito:")
+print("Acurácia:", accuracy_score(y_credit_teste, previsoes2))
+
+# Exibir relatório de classificação
+print(classification_report(y_credit_teste, previsoes2))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(logistic_credit)
+cm.fit(x_credit_treinamento, y_credit_treinamento)
+cm.score(x_credit_teste, y_credit_teste)
