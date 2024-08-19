@@ -1,0 +1,20 @@
+# Criar e treinar o modelo Random Forest para a base de crédito
+random_forest_credit = RandomForestClassifier(n_estimators=40, criterion='entropy', random_state=0)
+random_forest_credit.fit(x_credit_treinamento, y_credit_treinamento)
+
+# Fazer previsões com o modelo treinado
+previsoes = random_forest_credit.predict(x_credit_teste)
+
+# Avaliar o desempenho do modelo
+print("Base Credit Data")
+print("Previsões:", previsoes)
+print("Valores reais:", y_credit_teste)
+print("Acurácia:", accuracy_score(y_credit_teste, previsoes))
+
+# Exibir relatório de classificação
+print(classification_report(y_credit_teste, previsoes))
+
+# Visualizar a matriz de confusão
+cm = ConfusionMatrix(random_forest_credit)
+cm.fit(x_credit_treinamento, y_credit_treinamento)
+cm.score(x_credit_teste, y_credit_teste)
