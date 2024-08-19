@@ -36,14 +36,6 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 - **Acurácia:** 0.938
 - **Relatório de Classificação:**
 
-                 precision    recall  f1-score   support
-
-           0       0.95      0.98      0.97       436
-           1       0.84      0.64      0.73        64
-    accuracy                           0.94       500
-   macro avg       0.89      0.81      0.85       500
-weighted avg       0.93      0.94      0.93       500
-
 
 #### Árvore de Decisão
 - **Acurácia:** 
@@ -58,7 +50,7 @@ weighted avg       0.93      0.94      0.93       500
 ### Base de Dados do Censo
 
 #### Naive Bayes
-- **Acurácia:** 
+- **Acurácia:** 0.477
 - **Relatório de Classificação:**
 
 
