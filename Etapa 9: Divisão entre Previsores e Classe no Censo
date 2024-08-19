@@ -1,0 +1,6 @@
+# Separar variáveis previsoras (x) e classe (y)
+x_census = base_census.iloc[:, 0:14].values
+y_census = base_census.iloc[:, 14].values
+
+print(x_census)
+print(y_census)
