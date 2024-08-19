@@ -34,19 +34,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 #### Naive Bayes
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Árvore de Decisão
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Random Forest
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
@@ -54,19 +51,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 #### Naive Bayes
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Árvore de Decisão
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
 #### Random Forest
 - **Acurácia:** 
-- **Matriz de Confusão:**
 - **Relatório de Classificação:**
 
 
