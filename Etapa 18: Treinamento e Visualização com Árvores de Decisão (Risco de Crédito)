@@ -1,0 +1,23 @@
+#Classificação com Árvores de Decisão
+from sklearn.tree import DecisionTreeClassifier
+from sklearn import tree
+import matplotlib.pyplot as plt
+import pickle
+
+# Carregando a base de dados processada
+with open('risco_credito.pkl', 'rb') as f:
+    x_risco_credito, y_risco_credito = pickle.load(f)
+
+# Inicializando e treinando o classificador de árvore de decisão
+arvore_risco_credito = DecisionTreeClassifier(criterion='entropy')
+arvore_risco_credito.fit(x_risco_credito, y_risco_credito)
+
+# Exibindo informações do modelo
+print("Classes:", arvore_risco_credito.classes_)
+print("Importância das características:", arvore_risco_credito.feature_importances_)
+
+# Visualizando a árvore de decisão
+previsores = ['historia', 'divida', 'garantias', 'renda']
+figura, eixos = plt.subplots(nrows=1, ncols=1, figsize=(10, 10))
+tree.plot_tree(arvore_risco_credito, feature_names=previsores, class_names=arvore_risco_credito.classes_, filled=True)
+plt.show()
