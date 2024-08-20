@@ -73,8 +73,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### kNN
-- **Acurácia:** 
+- **Acurácia:** 0.986
 - **Relatório de Classificação:**
+
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| 0               |    0.99     |  0.99    |   0.99     |   436     |
+| 1               |    0.94     |  0.95    |   0.95     |    64     |
+| accuracy        |             |          |   0.99     |   500     |
+| macro avg       |    0.97     |  0.97    |   0.97     |   500     |
+| weighted avg    |    0.99     |  0.99    |   0.99     |   500     |
 
 
 #### Regressão Logística
@@ -134,8 +142,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### kNN
-- **Acurácia:** 
+- **Acurácia:** 0.829
 - **Relatório de Classificação:**
+
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| <=50k           |    0.86     |   0.93   |   0.89     |   3693    |
+| >50k            |    0.71     |   0.51   |   0.59     |   1192    |
+| accuracy        |             |          |   0.83     |   4885    |
+| macro avg       |    0.78     |   0.72   |   0.74     |   4885    |
+| weighted avg    |    0.82     |   0.83   |   0.82     |   4885    | 
 
 
 #### Regressão Logística
