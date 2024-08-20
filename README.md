@@ -45,7 +45,6 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 | weighted avg    |    0.93     |  0.94    |   0.93     |    500    |
 
 
-
 #### Árvore de Decisão
 - **Acurácia:** 0.982
 - **Relatório de Classificação:**
@@ -122,8 +121,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### Random Forest
-- **Acurácia:** 
+- **Acurácia:** 0.850
 - **Relatório de Classificação:**
+
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| <=50k           |    0.88     |   0.93   |   0.90     |   3693    |
+| >50k            |    0.73     |   0.62   |   0.67     |   1192    |
+| accuracy        |             |          |   0.85     |   4885    |
+| macro avg       |    0.81     |   0.77   |   0.79     |   4885    |
+| weighted avg    |    0.85     |   0.85   |   0.85     |   4885    | 
 
 
 #### kNN
