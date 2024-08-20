@@ -22,8 +22,8 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 4. **Divisão em Treinamento e Teste:**
    - Divisão dos dados em conjuntos de treinamento e teste para ambas as bases
 
-5. **Modelagem com Naive Bayes, Árvore de Decisão e Random Forest:**
-   - Treinamento e avaliação dos modelos Naive Bayes, Árvore de Decisão e Random Forest
+5. **Modelagem com Naive Bayes, Árvore de Decisão, Random Forest, kNN, Regressão logística, SVM e Redes neurais:**
+   - Treinamento e avaliação dos modelos Naive Bayes, Árvore de Decisão, Random Forest, kNN, Regressão logística, SVM e Redes neurais
 
 6. **Comparação de Resultados:**
    - Análise e comparação das métricas de desempenho dos modelos
