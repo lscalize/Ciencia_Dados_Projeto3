@@ -256,13 +256,3 @@ Além disso, é importante ressaltar que para a base do censo, onde os resultado
 
 Esta conclusão destaca a eficácia de cada modelo aplicado aos dois conjuntos de dados e orienta o leitor sobre qual modelo seria mais adequado dependendo do cenário de aplicação.
 
-
-## Como Executar
-
-1. Clone o repositório.
-2. Instale as dependências necessárias:
-   ```sh
-   pip install pandas numpy seaborn matplotlib plotly scikit-learn yellowbrick
-
-
-Com essas adições, o código e o README.md estão prontos para serem usados diretamente no GitHub, com todos os detalhes necessários para replicar o projeto e entender os resultados.
