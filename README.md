@@ -47,8 +47,17 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### Árvore de Decisão
-- **Acurácia:** 
+- **Acurácia:** 0.982
 - **Relatório de Classificação:**
+
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| 0               |    0.99     |  0.99    |   0.99     |   436     |
+| 1               |    0.91     |  0.95    |   0.93     |    64     |
+| accuracy        |             |          |   0.98     |   500     |
+| macro avg       |    0.95     |  0.97    |   0.96     |   500     |
+| weighted avg    |    0.98     |  0.98    |   0.98     |   500     |
+
 
 
 #### Random Forest
