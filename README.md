@@ -207,9 +207,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### Redes Neurais
-- **Acurácia:** 
+- **Acurácia:** 0.816
 - **Relatório de Classificação:**
 
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| <=50k           |    0.87     |   0.89   |   0.88     |   3693    |
+| >50k            |    0.64     |   0.59   |   0.61     |   1192    |
+| accuracy        |             |          |   0.82     |   4885    |
+| macro avg       |    0.75     |   0.74   |   0.75     |   4885    |
+| weighted avg    |    0.81     |   0.82   |   0.81     |   4885    | 
 
 
 ## Conclusão
