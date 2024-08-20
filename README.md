@@ -86,9 +86,16 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### Regressão Logística
-- **Acurácia:** 
+- **Acurácia:** 0.946
 - **Relatório de Classificação:**
 
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| 0               |    0.97     |  0.97    |   0.97     |   436     |
+| 1               |    0.79     |  0.78    |   0.79     |    64     |
+| accuracy        |             |          |   0.95     |   500     |
+| macro avg       |    0.88     |  0.88    |   0.88     |   500     |
+| weighted avg    |    0.95     |  0.95    |   0.95     |   500     |
 
 #### SVM
 - **Acurácia:** 
