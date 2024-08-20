@@ -221,13 +221,41 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 ## Conclusão
 
-Na base de dados de crédito, o modelo xxxxxxxxx apresentou a melhor acurácia...
+## Base de Dados de Crédito
 
-Na base de dados do censo, o modelo yyyyyyy  teve um desempenho superior... 
+A análise dos modelos de machine learning aplicados à base de dados de crédito revelou insights importantes:
 
-O relatório de classificação indica que o ZZZZZZZ conseguiu capturar melhor as nuances dos dados.
+- **Redes Neurais** apresentaram a melhor performance geral, com uma acurácia de **0.998** e um f1-score quase perfeito tanto para a classe majoritária quanto para a minoritária. Este modelo mostrou-se altamente eficaz para esse conjunto de dados, sendo o mais adequado para aplicações críticas onde a precisão é essencial.
 
-Esses resultados destacam a importância de avaliar múltiplos modelos para entender qual se ajusta melhor aos dados específicos de cada caso.
+- **SVM** e **kNN** também mostraram desempenhos notáveis, com acurácias de **0.988** e **0.986**, respectivamente. Esses modelos são bons candidatos para tarefas onde o equilíbrio entre precisão e eficiência computacional é necessário.
+
+- **Random Forest** e **Árvore de Decisão** tiveram desempenhos similares, com acurácias de **0.984** e **0.982**, respectivamente. Ambos os modelos conseguiram capturar bem os padrões da base de dados, mas mostraram uma leve tendência a superestimar a classe majoritária.
+
+- **Regressão Logística** e **Naive Bayes** apresentaram desempenhos inferiores em comparação aos outros modelos, com acurácias de **0.946** e **0.938**. Esses modelos, embora menos precisos, ainda podem ser úteis em cenários onde a interpretabilidade do modelo é uma prioridade.
+
+Em suma, **Redes Neurais** é o modelo mais indicado para a base de dados de crédito, seguido de perto por **SVM** e **kNN**, dependendo das restrições computacionais e da necessidade de explicabilidade.
+
+## Base de Dados do Censo
+
+A análise da base de dados do censo trouxe desafios adicionais, especialmente devido à natureza desbalanceada dos dados:
+
+- **SVM**, **Random Forest**, e **Regressão Logística** mostraram-se como as abordagens mais eficazes, com acurácias em torno de **0.850** e f1-scores equilibrados para ambas as classes. Esses modelos são altamente recomendados para este conjunto de dados, especialmente em cenários onde a classificação precisa de ambas as classes é essencial.
+
+- **Árvore de Decisão** e **kNN** também apresentaram bons desempenhos, com acurácias de **0.810** e **0.829**, respectivamente. Eles podem ser considerados em contextos onde a interpretabilidade ou a simplicidade do modelo são preferenciais.
+
+- **Naive Bayes** foi o modelo com o pior desempenho, com uma acurácia de **0.477**, demonstrando uma significativa limitação ao lidar com dados desbalanceados. Esse modelo não é recomendado para este tipo de aplicação, a menos que seja feita uma reavaliação do pré-processamento ou um ajuste no balanço das classes.
+
+Portanto, **SVM**, **Random Forest**, e **Regressão Logística** são as escolhas mais robustas para a base de dados do censo, com **Árvore de Decisão** e **kNN** sendo alternativas viáveis em situações específicas.
+
+## Ajuste de Parâmetros e Otimização
+
+Além disso, é importante ressaltar que para a base do censo, onde os resultados foram um pouco piores, há ainda a possibilidade de ajuste de parâmetros e otimização. Foram sugeridas as seguintes técnicas para melhorar a performance dos modelos:
+
+- **Grid Search**: Busca exaustiva de combinações de parâmetros pré-definidos para encontrar a melhor configuração.
+- **Random Search**: Seleção aleatória de combinações de parâmetros, que permite explorar uma maior variedade de opções em menos tempo.
+
+Esta conclusão destaca a eficácia de cada modelo aplicado aos dois conjuntos de dados e orienta o leitor sobre qual modelo seria mais adequado dependendo do cenário de aplicação.
+
 
 ## Como Executar
 
