@@ -65,6 +65,26 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 - **Relatório de Classificação:**
 
 
+#### kNN
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### Regressão Logística
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### SVM
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### Redes Neurais
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
 ### Base de Dados do Censo
 
 #### Naive Bayes
@@ -94,6 +114,26 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 
 #### Random Forest
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### kNN
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### Regressão Logística
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### SVM
+- **Acurácia:** 
+- **Relatório de Classificação:**
+
+
+#### Redes Neurais
 - **Acurácia:** 
 - **Relatório de Classificação:**
 
