@@ -98,8 +98,17 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 | weighted avg    |    0.95     |  0.95    |   0.95     |   500     |
 
 #### SVM
-- **Acurácia:** 
+- **Acurácia:** 0.988
 - **Relatório de Classificação:**
+
+|                 |   precision |   recall |   f1-score |   support |
+|:----------------|------------:|---------:|-----------:|----------:|
+| 0               |    0.99     |  1.00    |   0.99     |   436     |
+| 1               |    0.97     |  0.94    |   0.95     |    64     |
+| accuracy        |             |          |   0.99     |   500     |
+| macro avg       |    0.98     |  0.97    |   0.97     |   500     |
+| weighted avg    |    0.99     |  0.99    |   0.99     |   500     |
+
 
 
 #### Redes Neurais
