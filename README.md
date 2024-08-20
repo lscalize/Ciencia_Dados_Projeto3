@@ -30,7 +30,7 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 ## Resultados da Análise e Modelagem
 
-### Base de Dados de Crédito
+### Base de Dados de Crédito - Fonte: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 
 #### Naive Bayes
 - **Acurácia:** 0.938
@@ -124,7 +124,7 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 | weighted avg    |    1.00     |  1.00    |   1.00     |   500     |
 
 
-### Base de Dados do Censo
+### Base de Dados do Censo - Fonte: https://archive.ics.uci.edu/dataset/2/adult
 
 #### Naive Bayes
 - **Acurácia:** 0.477
