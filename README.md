@@ -35,8 +35,11 @@ Explorar e modelar dados de diferentes fontes, utilizando técnicas avançadas d
 ## Ferramentas|Bibliotecas Utilizadas
 
 - Python
-- xxxx
-- xxxxx
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
 
 ## Resultados da Análise e Modelagem
 
