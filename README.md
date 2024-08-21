@@ -32,6 +32,12 @@ Explorar e modelar dados de diferentes fontes, utilizando técnicas avançadas d
 6. **Comparação de Resultados:**
    - Análise e comparação das métricas de desempenho dos modelos
 
+## Ferramentas|Bibliotecas Utilizadas
+
+- Python
+- xxxx
+- xxxxx
+
 ## Resultados da Análise e Modelagem
 
 ### Base de Dados de Crédito - Fonte: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
