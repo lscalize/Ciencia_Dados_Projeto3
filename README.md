@@ -40,6 +40,7 @@ Explorar e modelar dados de diferentes fontes, utilizando técnicas avançadas d
 - Scikit-learn
 - Matplotlib
 - Seaborn
+- Sklearn 
 
 ## Resultados da Análise e Modelagem
 
