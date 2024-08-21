@@ -6,7 +6,7 @@ Este projeto utiliza técnicas de análise e modelagem de dados para explorar du
 
 ## Objetivo
 
-Realizar a análise e modelagem de dados para definição dos melhores algoritmos de classificação de machine learning para cada uma das bases de dados do projeto.
+Explorar e modelar dados de diferentes fontes, utilizando técnicas avançadas de machine learning para identificar e avaliar os algoritmos de classificação mais eficazes para cada conjunto de dados. O projeto visa comparar o desempenho dos modelos e recomendar as melhores abordagens para problemas específicos de classificação em bases de dados de crédito e censo.
 
 ## Estrutura do Projeto
 
