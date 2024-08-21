@@ -4,6 +4,10 @@
 
 Este projeto utiliza técnicas de análise e modelagem de dados para explorar duas bases de dados distintas: uma de crédito e outra do censo. O objetivo é preprocessar os dados, aplicar técnicas de visualização e preparar os dados para futuros modelos de machine learning.
 
+## Objetivo
+
+Realizar a análise e modelagem de dados para definição dos melhores algoritmos de classificação de machine learning para cada uma das bases de dados do projeto.
+
 ## Estrutura do Projeto
 
 1. **Exploração e Limpeza dos Dados de Crédito:**
